@@ -1,0 +1,16 @@
+{
+  "title": "Patient Information",
+  "patientDetails": "Patient Details",
+  "patientName": "Patient Name",
+  "patientID": "Patient ID",
+  "sex": "Sex",
+  "dateOfBirth": "Date of Birth",
+  "studiesInformation": "Studies Information",
+  "modality": "Modality",
+  "studyDate": "Study Date",
+  "description": "Description",
+  "close": "Close",
+  "multiplePatientsTitle": "Multiple Patients Detected",
+  "multiplePatientsWarning": "The current study contains images from multiple patients. Patient information is not displayed for safety reasons.",
+  "noStudiesAvailable": "No studies available"
+}

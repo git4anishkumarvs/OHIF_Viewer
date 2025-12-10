@@ -9,6 +9,7 @@ import HeaderPatientInfo from './HeaderPatientInfo';
 import { PatientInfoVisibility } from './HeaderPatientInfo/HeaderPatientInfo';
 import { preserveQueryParameters } from '@ohif/app';
 import { Types } from '@ohif/core';
+import PatientInfoModal from '../Components/PatientInfoModal';
 
 function ViewerHeader({ appConfig }: withAppTypes<{ appConfig: AppTypes.Config }>) {
   const { servicesManager, extensionManager, commandsManager } = useSystem();
@@ -97,7 +98,7 @@ function ViewerHeader({ appConfig }: withAppTypes<{ appConfig: AppTypes.Config }
         )
       }
       UndoRedo={
-        <div className="text-primary flex cursor-pointer items-center">
+        <div className="text-primary flex cursor-pointer items-center gap-2">
           <Button
             variant="ghost"
             className="hover:bg-primary-dark"
@@ -116,6 +117,11 @@ function ViewerHeader({ appConfig }: withAppTypes<{ appConfig: AppTypes.Config }
           >
             <Icons.Redo className="" />
           </Button>
+          <div className="border-primary-dark mx-1.5 h-[25px] border-r"></div>
+          <PatientInfoModal
+            servicesManager={servicesManager}
+            appConfig={appConfig}
+          />
         </div>
       }
     >
