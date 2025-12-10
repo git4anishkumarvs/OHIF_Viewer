@@ -9,6 +9,7 @@ import Header from './Header.json';
 import HotkeysValidators from './HotkeysValidators.json';
 import MeasurementTable from './MeasurementTable.json';
 import Modes from './Modes.json';
+import PatientInfoModal from './PatientInfoModal.json';
 import SegmentationTable from './SegmentationTable.json';
 import SidePanel from './SidePanel.json';
 import StudyBrowser from './StudyBrowser.json';
@@ -39,6 +40,7 @@ export default {
     HotkeysValidators,
     MeasurementTable,
     Modes,
+    PatientInfoModal,
     SegmentationTable,
     SidePanel,
     StudyBrowser,
